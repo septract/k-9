@@ -70,6 +70,13 @@ class SettingsActivity : K9Activity() {
             add(SettingsActionItem(getString(R.string.add_account_action), SettingsAction.ADD_ACCOUNT))
         }
         settingsAdapter.add(accountSection)
+
+        //TODO: add header and/or divider
+        val miscSection = Section().apply {
+            add(SettingsActionItem(getString(R.string.about_action), SettingsAction.ABOUT_SCREEN))
+            add(SettingsActionItem(getString(R.string.changelog_full_title), SettingsAction.CHANGELOG_SCREEN))
+        }
+        settingsAdapter.add(miscSection)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
