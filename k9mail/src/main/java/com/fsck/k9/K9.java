@@ -126,8 +126,8 @@ public class K9 extends Application {
      * can be read using unprivileged access (eg. Terminal Emulator)
      * on the phone, without adb.  Set to null to disable
      */
-    public static final String logFile = null;
-    //public static final String logFile = Environment.getExternalStorageDirectory() + "/k9mail/debug.log";
+    //public static final String logFile = null;
+    public static final String logFile = Environment.getExternalStorageDirectory() + "/k9mail/debug.log";
 
     /**
      * If this is enabled, various development settings will be enabled
